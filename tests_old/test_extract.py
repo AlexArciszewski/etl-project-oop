@@ -2,7 +2,7 @@ import pandas as pd
 import pytest
 from pathlib import Path
 
-from extract import choose_loader, data_extractor
+from extract_old import choose_loader, data_extractor
 
 
 def test_choose_loader_csv(monkeypatch) -> None:

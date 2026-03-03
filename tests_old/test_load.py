@@ -2,7 +2,7 @@ import pandas as pd
 import pytest
 from pathlib import Path
 
-from load import save_data
+from load_old import save_data
 
 
 @pytest.fixture

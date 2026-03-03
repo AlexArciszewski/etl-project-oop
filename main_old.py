@@ -2,10 +2,10 @@ from typing import Callable, Dict, Optional
 import pandas as pd
 from colorama import init
 
-from extract import data_extractor, choose_loader
+from extract_old import data_extractor, choose_loader
 from transform import data_transform
-from load import choose_path, save_data
-from logo import show_logo
+from load_old import choose_path, save_data
+from logo_old import show_logo
 
 
 init(autoreset=True)

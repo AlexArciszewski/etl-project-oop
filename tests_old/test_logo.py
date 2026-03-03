@@ -1,6 +1,6 @@
 import pytest
 
-from logo import show_logo
+from logo_old import show_logo
 
 
 def test_show_logo_outputs_text(capsys) -> None:
