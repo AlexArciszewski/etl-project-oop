@@ -10,6 +10,7 @@ class Menu:
     
     def run(self) -> None:
         """Application controller"""
+        
         while True:
             print() 
             self.display()
