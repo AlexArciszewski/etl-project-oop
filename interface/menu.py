@@ -1,4 +1,6 @@
+from sources.csv_source import CsvSource
 
+import pandas as pd
 
 class Menu:
     """Menu class"""
@@ -38,7 +40,12 @@ class Menu:
     def _run_etl(self) -> None:
         """Builds components and runs the ETL pipeline."""
         
-        pass
+        source = CsvSource("/media/alexander/Dane2/2_Python_Data/998_Databases/2_db_cars_csv/USA_cars_datasets.csv")
+        df = source.get_data()
+        
+        print(df.head(0))
+        
+    
 
 
     
