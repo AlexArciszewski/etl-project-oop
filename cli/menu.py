@@ -8,9 +8,10 @@ class Menu:
         pass
     
     
-    def run(self):
+    def run(self) -> None:
         """Application controller"""
-        while True: 
+        while True:
+            print() 
             self.display()
             choice:str = input("Pls choose 1 or 2: ")
             
@@ -20,20 +21,21 @@ class Menu:
                 except Exception as e:
                     print(f"Error:{e}")
             elif choice == "2":
+                print("Program will now exit.")
                 break
             else:
                 print("invalid option")     
         
     
-    def display(self):
+    def display(self) -> None:
         """Method used to show the program Menu"""
         
         print("1 - Run ETL process")
         print("2 - Exit")
     
     
-    def _run_etl(self):
-        """Method responsible for the complete ETL process"""
+    def _run_etl(self) -> None:
+        """Builds components and runs the ETL pipeline."""
         
         pass
 
