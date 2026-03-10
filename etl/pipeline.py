@@ -1,5 +1,5 @@
-from etl.sources import BaseSource
-from etl.transformers import BaseTransformer
+from sources.base_source import BaseSource
+from transform.base_transformer import BaseTransformer
 from etl.loaders import BaseLoader
 
 import pandas as pd

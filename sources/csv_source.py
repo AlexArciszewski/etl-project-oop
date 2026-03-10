@@ -12,8 +12,7 @@ class CsvSource(BaseSource):
     
     def get_data(self) -> pd.DataFrame:
         df = pd.read_csv(self.path)
-        # df = df.drop(columns=["Unnamed: 0"], errors="ignore")
-        # print(df.head(2))
+      
         return df
 
 

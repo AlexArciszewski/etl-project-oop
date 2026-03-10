@@ -1,5 +1,5 @@
 from sources.csv_source import CsvSource
-
+from transform.transformers import Transformer
 import pandas as pd
 
 class Menu:
@@ -43,7 +43,9 @@ class Menu:
         source = CsvSource("/media/alexander/Dane2/2_Python_Data/998_Databases/2_db_cars_csv/USA_cars_datasets.csv")
         df = source.get_data()
         
-        # print(f" z menu \n {df.head(1)}")
+        transformer = Transformer()
+        transformed_df = transformer.transform(df)
+       
         
     
 
