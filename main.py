@@ -1,9 +1,20 @@
 from interface.menu import Menu
+from etl.pipeline import Pipeline
+from etl.logger import get_logger
+
+
+
 
 
 def main() -> None:
+    logger = get_logger(__name__)
+    logger.info("Application started")
+   
+    menu = Menu()
     Menu().run()
-
+    logger.info("Application finished")
 
 if __name__ == "__main__":
+    
     main()
+    

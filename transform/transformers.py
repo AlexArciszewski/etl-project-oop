@@ -1,6 +1,9 @@
 from .base_transformer import BaseTransformer
+from etl.logger import get_logger
+
 import pandas as pd
 
+logger = get_logger(__name__)
 
 class Transformer(BaseTransformer): 
     
@@ -13,8 +16,9 @@ class Transformer(BaseTransformer):
         df = df.drop_duplicates()
         df = df.dropna()
         
-        print(f"Data transformed successfully")
         
-        print(df.head(2))
+        logger.info(f"Data transformed successfully")
+        # print(f"Data transformed successfully")
+        
         
         return df

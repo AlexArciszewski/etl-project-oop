@@ -5,12 +5,15 @@ import pandas as pd
 
 
 class CsvSource(BaseSource):
+    """CSV data source."""
     
     def __init__(self, path:str) -> None:
         
         self.path = path
     
     def get_data(self) -> pd.DataFrame:
+        """Load CSV file into DataFrame."""
+        
         df = pd.read_csv(self.path)
       
         return df

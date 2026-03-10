@@ -1,7 +1,7 @@
 from sources.csv_source import CsvSource
 from transform.transformers import Transformer
 import pandas as pd
-
+from etl.pipeline import Pipeline
 class Menu:
     """Menu class"""
     
@@ -16,7 +16,7 @@ class Menu:
         while True:
             print() 
             self.display()
-            choice:str = input("Pls choose 1 or 2: ")
+            choice: str = input("Please choose 1 or 2: ")
             
             if choice == "1":
                 try:
@@ -41,11 +41,16 @@ class Menu:
         """Builds components and runs the ETL pipeline."""
         
         source = CsvSource("/media/alexander/Dane2/2_Python_Data/998_Databases/2_db_cars_csv/USA_cars_datasets.csv")
-        df = source.get_data()
+        # transformer = Transformer()
+        # df = source.get_data()
         
         transformer = Transformer()
+
+        df = source.get_data()
+
         transformed_df = transformer.transform(df)
-       
+
+        print(transformed_df.head())
         
     
 
