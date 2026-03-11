@@ -2,6 +2,9 @@ from sources.csv_source import CsvSource
 from transform.transformers import Transformer
 import pandas as pd
 from etl.pipeline import Pipeline
+from loaders.csv_loader import CsvLoader
+
+
 class Menu:
     """Menu class"""
     
@@ -51,6 +54,9 @@ class Menu:
         transformed_df = transformer.transform(df)
 
         print(transformed_df.head())
+        
+        loader = CsvLoader("/media/alexander/Dane2/2_Coding/2_python_coding/001_etl_project_OOP/saved_data/output.csv")
+        loader.save_data(transformed_df)
         
     
 

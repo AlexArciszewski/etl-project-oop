@@ -12,3 +12,13 @@
 2026-03-10 17:10:36,134 | INFO | __main__ | Application started
 2026-03-10 17:10:37,933 | INFO | transform.transformers | Data transformed successfully
 2026-03-10 17:10:40,332 | INFO | __main__ | Application finished
+2026-03-11 14:38:10,667 | INFO | __main__ | Application started
+2026-03-11 14:38:15,930 | INFO | transform.transformers | Data transformed successfully
+2026-03-11 17:08:53,200 | INFO | __main__ | Application started
+2026-03-11 17:08:55,341 | INFO | transform.transformers | Data transformed successfully
+2026-03-11 17:09:53,644 | INFO | transform.transformers | Data transformed successfully
+2026-03-11 17:11:03,243 | INFO | __main__ | Application started
+2026-03-11 17:11:03,911 | INFO | transform.transformers | Data transformed successfully
+2026-03-11 17:11:03,924 | INFO | loaders.csv_loader | Data saved to /media/alexander/Dane2/2_Coding/2_python_coding/001_etl_project_OOP/saved_data/output.csv
+2026-03-11 17:15:55,561 | INFO | transform.transformers | Data transformed successfully
+2026-03-11 17:15:55,574 | INFO | loaders.csv_loader | Data saved to /media/alexander/Dane2/2_Coding/2_python_coding/001_etl_project_OOP/saved_data/output.csv
