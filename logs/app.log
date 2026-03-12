@@ -249,3 +249,37 @@
 2026-03-12 15:42:34,230 | INFO | transform.transformers | Data transformed successfully
 2026-03-12 15:42:34,232 | INFO | transform.transformers | Rows before: 2, rows after: 2
 2026-03-12 15:42:34,232 | INFO | transform.transformers | Data transformed successfully
+2026-03-12 15:51:17,530 | INFO | loaders.csv_loader | Data saved to /tmp/pytest-of-alexander/pytest-7/test_csv_loader_saves_file0/output.csv
+2026-03-12 15:51:17,534 | INFO | loaders.csv_loader | Data saved to /tmp/pytest-of-alexander/pytest-7/test_csv_loader_saves_correct_0/output.csv
+2026-03-12 15:51:17,538 | INFO | sources.csv_source | Loading CSV file: /tmp/pytest-of-alexander/pytest-7/test_csv_source_loads_data0/input.csv
+2026-03-12 15:51:17,539 | INFO | sources.csv_source | Loaded 2 rows from /tmp/pytest-of-alexander/pytest-7/test_csv_source_loads_data0/input.csv
+2026-03-12 15:51:17,542 | INFO | etl.pipeline | Pipeline started
+2026-03-12 15:51:17,542 | INFO | sources.csv_source | Loading CSV file: /tmp/pytest-of-alexander/pytest-7/test_pipeline_runs0/input.csv
+2026-03-12 15:51:17,542 | INFO | sources.csv_source | Loaded 2 rows from /tmp/pytest-of-alexander/pytest-7/test_pipeline_runs0/input.csv
+2026-03-12 15:51:17,548 | INFO | etl.pipeline | Data loaded
+2026-03-12 15:51:17,550 | INFO | transform.transformers | Rows before: 2, rows after: 1
+2026-03-12 15:51:17,550 | INFO | transform.transformers | Data transformed successfully
+2026-03-12 15:51:17,554 | INFO | etl.pipeline | Data transformed
+2026-03-12 15:51:17,555 | INFO | loaders.csv_loader | Data saved to /tmp/pytest-of-alexander/pytest-7/test_pipeline_runs0/output.csv
+2026-03-12 15:51:17,555 | INFO | etl.pipeline | Data saved
+2026-03-12 15:51:17,555 | INFO | etl.pipeline | Pipeline process completed
+2026-03-12 15:51:17,558 | INFO | etl.pipeline | Pipeline started
+2026-03-12 15:51:17,558 | INFO | sources.csv_source | Loading CSV file: /tmp/pytest-of-alexander/pytest-7/test_pipeline_removes_nulls0/input.csv
+2026-03-12 15:51:17,559 | INFO | sources.csv_source | Loaded 2 rows from /tmp/pytest-of-alexander/pytest-7/test_pipeline_removes_nulls0/input.csv
+2026-03-12 15:51:17,562 | INFO | etl.pipeline | Data loaded
+2026-03-12 15:51:17,564 | INFO | transform.transformers | Rows before: 2, rows after: 1
+2026-03-12 15:51:17,564 | INFO | transform.transformers | Data transformed successfully
+2026-03-12 15:51:17,567 | INFO | etl.pipeline | Data transformed
+2026-03-12 15:51:17,568 | INFO | loaders.csv_loader | Data saved to /tmp/pytest-of-alexander/pytest-7/test_pipeline_removes_nulls0/output.csv
+2026-03-12 15:51:17,568 | INFO | etl.pipeline | Data saved
+2026-03-12 15:51:17,568 | INFO | etl.pipeline | Pipeline process completed
+2026-03-12 15:51:17,572 | INFO | transform.transformers | Rows before: 3, rows after: 1
+2026-03-12 15:51:17,572 | INFO | transform.transformers | Data transformed successfully
+2026-03-12 15:51:17,575 | INFO | transform.transformers | Rows before: 2, rows after: 2
+2026-03-12 15:51:17,575 | INFO | transform.transformers | Data transformed successfully
+2026-03-12 15:51:17,578 | INFO | transform.transformers | Rows before: 2, rows after: 1
+2026-03-12 15:51:17,579 | INFO | transform.transformers | Data transformed successfully
+2026-03-12 15:51:17,581 | INFO | transform.transformers | Rows before: 2, rows after: 2
+2026-03-12 15:51:17,582 | INFO | transform.transformers | Data transformed successfully
+2026-03-12 15:51:17,584 | INFO | transform.transformers | Rows before: 2, rows after: 2
+2026-03-12 15:51:17,584 | INFO | transform.transformers | Data transformed successfully
