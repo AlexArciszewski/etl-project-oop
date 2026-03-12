@@ -11,7 +11,7 @@ def main() -> None:
     logger.info("Application started")
    
     menu = Menu()
-    Menu().run()
+    menu.run()
     logger.info("Application finished")
 
 if __name__ == "__main__":

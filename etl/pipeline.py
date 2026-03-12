@@ -1,26 +1,13 @@
 from sources.base_source import BaseSource
 from transform.base_transformer import BaseTransformer
-#from etl.loaders import BaseLoader
+from loaders.base_loader import BaseLoader
 from etl.logger import get_logger
 import pandas as pd
 
 
 logger = get_logger(__name__)
 
-# def run_pipeline():
 
-#     logger.info("Pipeline started")
-
-#     try:
-#         logger.info("Loading data")
-
-#         # tu np. pandas
-#         # df = pd.read_csv(...)
-
-#         logger.info("Data loaded successfully")
-
-#     except Exception as e:
-#         logger.error(f"Pipeline error: {e}")
 
 class Pipeline:
     """Class that represents the ETL pipeline."""
@@ -29,20 +16,28 @@ class Pipeline:
     def __init__(self, 
         source: BaseSource,
         transformer: BaseTransformer,
-        # loader: BaseLoader
+        loader: BaseLoader
         ) -> None:
         
         self.source = source
         self.transformer = transformer
-        #self.loader = loader
+        self.loader = loader
     
     def run(self) -> pd.DataFrame:
         """Execute the ETL pipeline."""
         
-        raw_data = self.source.get_data()
-        transformed_data = self.transformer.transform(raw_data)
+        logger.info("Pipeline started")
         
-        # self.loader.save(transformed_data)
+        raw_data = self.source.get_data()
+        logger.info("Data loaded")
+        
+        transformed_data = self.transformer.transform(raw_data)
+        logger.info("Data transformed")
+        
+        self.loader.save_data(transformed_data)
+        logger.info("Data saved")
+        
+        logger.info("Pipeline process completed")
         
         return transformed_data
         
