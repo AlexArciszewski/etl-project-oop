@@ -12,7 +12,7 @@
 
     <details>
     <summary> 
-    Click here to see general information about <b>Project</b>!
+    Click here to see general information about the Project.
     </summary>
     <b>Simple ETL pipeline written in Python using Object-Oriented Programming.
     The project demonstrates a clean architecture with separation of:
@@ -33,7 +33,7 @@
 
     <details>
     <summary>
-     Click here to see general information about the technology used in the project.
+     More details..
     </summary>
 
     Technologies:
@@ -59,7 +59,7 @@
 
     <details>
     <summary>
-    Setup details.
+    More details..
     </summary>
 
     * Clone repository
@@ -83,7 +83,7 @@
 * [Project structure](#project_structure)
     <details>
     <summary>
-    The structure of the project.
+    More details..
     </summary>
 
     ```
@@ -130,7 +130,7 @@
 * [ETL pipeline architecture](#ETL_pipeline)
     <details>
     <summary>
-    The structure of the project.
+    More details..
     </summary>
     
     Pipeline workflow:
@@ -167,6 +167,7 @@
 * [More detailed information about modules](#more-detailed-information-about-modules)
     <details>
     <summary>
+    More details..
     </summary>
 
     * Sources:
@@ -209,13 +210,18 @@
 
             Save data
 
-</details>
+    </details>
 
 
 * [Application view](#application-view)
     <details>
-   
-        <img width="1331" height="712" alt="Image" src="https://github.com/user-attachments/assets/7cf5c31a-7cf1-44e0-a266-4b64b50fedfe" />
+    <summary>
+    More details..
+    </summary>
+
+    <img width="1331" height="712" alt="Image" src="https://github.com/user-attachments/assets/7cf5c31a-7cf1-44e0-a266-4b64b50fedfe" />
+
 
     </details>
+
 
