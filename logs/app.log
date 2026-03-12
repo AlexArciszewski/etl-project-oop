@@ -283,3 +283,14 @@
 2026-03-12 15:51:17,582 | INFO | transform.transformers | Data transformed successfully
 2026-03-12 15:51:17,584 | INFO | transform.transformers | Rows before: 2, rows after: 2
 2026-03-12 15:51:17,584 | INFO | transform.transformers | Data transformed successfully
+2026-03-12 19:30:11,993 | INFO | __main__ | Application started
+2026-03-12 19:30:26,482 | INFO | etl.pipeline | Pipeline started
+2026-03-12 19:30:26,482 | INFO | sources.csv_source | Loading CSV file: /media/alexander/Dane2/2_Python_Data/998_Databases/2_db_cars_csv/USA_cars_datasets.csv
+2026-03-12 19:30:26,523 | INFO | sources.csv_source | Loaded 2499 rows from /media/alexander/Dane2/2_Python_Data/998_Databases/2_db_cars_csv/USA_cars_datasets.csv
+2026-03-12 19:30:26,531 | INFO | etl.pipeline | Data loaded
+2026-03-12 19:30:26,535 | INFO | transform.transformers | Rows before: 2499, rows after: 2499
+2026-03-12 19:30:26,535 | INFO | transform.transformers | Data transformed successfully
+2026-03-12 19:30:26,541 | INFO | etl.pipeline | Data transformed
+2026-03-12 19:30:26,548 | INFO | loaders.csv_loader | Data saved to /media/alexander/Dane2/2_Coding/2_python_coding/001_etl_project_OOP/saved_data/output.csv
+2026-03-12 19:30:26,548 | INFO | etl.pipeline | Data saved
+2026-03-12 19:30:26,548 | INFO | etl.pipeline | Pipeline process completed

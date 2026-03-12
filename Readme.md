@@ -1,123 +1,221 @@
-# ETL Project (Python)
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-green)
+![Pytest](https://img.shields.io/badge/Pytest-Testing-orange)
+![Logging](https://img.shields.io/badge/Logging-Built--in-yellow)
+![ETL](https://img.shields.io/badge/Data%20Engineering-ETL-purple)
+![OOP](https://img.shields.io/badge/Programming-OOP-red)
+![Tests](https://img.shields.io/badge/tests-pytest-success)
+![Architecture](https://img.shields.io/badge/Architecture-modular-blue)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![Tests](https://img.shields.io/badge/tests-pytest-blue)
-![Coverage](https://img.shields.io/badge/coverage-81%25-green)
-![pandas](https://img.shields.io/badge/pandas-3.0.0-purple)
+* [General info](#general-info)
 
+    <details>
+    <summary> 
+    Click here to see general information about <b>Project</b>!
+    </summary>
+    <b>Simple ETL pipeline written in Python using Object-Oriented Programming.
+    The project demonstrates a clean architecture with separation of:
+    Data sources
 
-Simple CLI ETL (Extract, Transform, Load) application written in Python.
-The program allows loading data from CSV or Excel files, performing basic cleaning, and saving the result to CSV, Excel, or JSON.
+    * Data transformations
 
-## Features
+    * Data loaders
 
-### Extract data from:
-- CSV files
-- Excel files (.xls, .xlsx)
+    * Pipeline orchestration
 
-### Transform data:
+    * Logging
 
-- remove missing values
-- remove duplicates
+    * Automated testing </b> 
+    </details>
 
-### Load data to:
+* [Technologies](#technologies)
 
-- CSV
-- Excel
-- JSON
-- Interactive CLI menu
+    <details>
+    <summary>
+     Click here to see general information about the technology used in the project.
+    </summary>
 
-### Project structure
+    Technologies:
 
-```
-etl_project/
-│
-├── main.py
-├── extract.py
-├── transform.py
-├── load.py
-├── logo.py
-├── requirements.txt
-│
-├── tests/
-│   ├── test_extract.py
-│   ├── test_transform.py
-│   ├── test_load.py
-│   ├── test_main.py
-│   └── test_logo.py
-│
-└── README.md
-```
-## Instalaltion
+    * Python
 
-Clone the repository:
+    * Pandas
 
-https://github.com/AlexArciszewski/001_etl_project.git
+    * Pytest
 
-```
-git clone https://github.com/AlexArciszewski/001_etl_project.git
-cd etl_project
-```
+    * Logging
 
-Create virtual environment:
+    * ETL Architecture
 
-```
-python -m venv venv
-source venv/bin/activate
-```
+    * Object-Oriented Programming (OOP)
 
-Dependencies installation:
+    * CSV Data Processing
 
-```
-pip install -r requirements.txt
-```
+    </details>
 
 
-## How to run
+* [Setup](#setup)
 
-Run the program:
+    <details>
+    <summary>
+    Setup details.
+    </summary>
 
-python main.py
+    * Clone repository
 
-Follow the menu instructions in the terminal.
+        git clone https://github.com/AlexArciszewski/etl-project-oop.git
 
-## Example workflow
+    * Go to project directory
 
-- Choose Extract Data
-- Provide file path
-- Transform data
-- Save data to selected format
+        cd etl_project
 
-## Technologies used
+    * Install dependencies
 
-- Python
-- pandas
-- openpyxl
-- colorama
+        pip install -r requirements.txt
 
-## Tests
+    * Run application
 
-This project includes unit tests written with pytest to ensure correctness and reliability of the ETL pipeline.
+        python main.py
+    </details>
 
-Tests cover:
 
-- data extraction
-- data transformation
-- data loading
-- CLI behavior
-- edge cases and error handling
+* [Project structure](#project_structure)
+    <details>
+    <summary>
+    The structure of the project.
+    </summary>
 
-Run tests with coverage report:
+    ```
+    etl-project-oop
+     │ 
+     ├── etl 
+     |    ├── logger.py
+     |    └── pipeline.py 
+     │
+     ├── sources
+     │    ├── base_source.py 
+     │    └── csv_source.py 
+     │ 
+     ├── transform
+     │    ├── base_transformer.py 
+     │    └── transformers.py 
+     │ 
+     ├── loaders
+     │    ├── base_loader.py
+     │    └── csv_loader.py 
+     │ 
+     ├── interface
+     │    └── menu.py
+     │ 
+     ├── saved_data
+     │ 
+     ├── logs
+     │ 
+     ├── tests
+     │     ├── test_csv_loader.py
+     │     ├── test_csv_source.py
+     │     ├── test_pipeline.py
+     │     └── test_transformer.py
+     │
+     ├── main.py
+     │ 
+     ├──  pytest.ini
+     │
+     └── requirements.txt
+    ```
+    </details>
 
-```
-pytest --cov=. --cov-report=term
-```
 
-## Purpose
+* [ETL pipeline architecture](#ETL_pipeline)
+    <details>
+    <summary>
+    The structure of the project.
+    </summary>
+    
+    Pipeline workflow:
+    ```
+     +------------+ 
+     | Data Source| 
+     | (CSV file) |
+     +------------+
+           | 
+           v 
+     +------------+
+     | Transformer|
+     | Data clean |
+     | Remove null| 
+     | Drop dupes |
+     +------------+
+           | 
+           v 
+     +------------+
+     |   Loader   | 
+     |  Save CSV  |
+     +------------+
+           | 
+           v 
+     +------------+
+     | Saved Data |
+     +------------+
 
-This project was created as a learning exercise to practice:
+    ```
 
-- ETL pipeline design
-- Python modular structure
-- pandas data processing
-- CLI application development
+    </details>
+
+
+* [More detailed information about modules](#more-detailed-information-about-modules)
+    <details>
+    <summary>
+    </summary>
+
+    * Sources:
+
+      Responsible for loading raw data.
+
+        Example:
+
+            CsvSource
+
+    * Transformers:
+
+        Responsible for cleaning and transforming data.
+
+        Operations include:
+
+        * removing duplicates
+
+        * removing missing values
+
+        * removing unnecessary columns
+
+    * Loaders
+
+        Responsible for saving processed data.
+
+        Example:
+
+            CsvLoader
+
+    * Pipeline
+
+        Responsible for orchestrating the ETL process.
+
+        Steps:
+
+            Load data
+
+            Transform data
+
+            Save data
+
+</details>
+
+
+* [Application view](#application-view)
+    <details>
+   
+        <img width="1331" height="712" alt="Image" src="https://github.com/user-attachments/assets/7cf5c31a-7cf1-44e0-a266-4b64b50fedfe" />
+
+    </details>
+
