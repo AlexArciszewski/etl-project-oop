@@ -8,10 +8,8 @@ import pandas as pd
 logger = get_logger(__name__)
 
 
-
 class Pipeline:
     """Class that represents the ETL pipeline."""
-    
     
     def __init__(self, 
         source: BaseSource,
@@ -29,9 +27,17 @@ class Pipeline:
         logger.info("Pipeline started")
         
         raw_data = self.source.get_data()
+        
+        print("\nRAW DATA")
+        print(raw_data.head())
+        
         logger.info("Data loaded")
         
         transformed_data = self.transformer.transform(raw_data)
+        
+        print("\nTRANSFORMED DATA")
+        print(transformed_data.head())
+        
         logger.info("Data transformed")
         
         self.loader.save_data(transformed_data)

@@ -44,21 +44,18 @@ class Menu:
         """Builds components and runs the ETL pipeline."""
         
         source = CsvSource("/media/alexander/Dane2/2_Python_Data/998_Databases/2_db_cars_csv/USA_cars_datasets.csv")
-        # transformer = Transformer()
-        # df = source.get_data()
         
         transformer = Transformer()
-
-        df = source.get_data()
-
-        transformed_df = transformer.transform(df)
-
-        print(transformed_df.head())
+        
         
         loader = CsvLoader("/media/alexander/Dane2/2_Coding/2_python_coding/001_etl_project_OOP/saved_data/output.csv")
-        loader.save_data(transformed_df)
+        # loader.save_data(transformed_df)
         
-    
+        pipeline = Pipeline(source, transformer, loader)
+        
+        result = pipeline.run()
+        
+        print(result.head())
 
 
     
