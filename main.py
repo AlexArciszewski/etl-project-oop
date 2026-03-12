@@ -1,9 +1,5 @@
 from interface.menu import Menu
-from etl.pipeline import Pipeline
 from etl.logger import get_logger
-
-
-
 
 
 def main() -> None:

@@ -1,8 +1,11 @@
+import pandas as pd
+
 from sources.base_source import BaseSource
 from transform.base_transformer import BaseTransformer
 from loaders.base_loader import BaseLoader
 from etl.logger import get_logger
-import pandas as pd
+
+
 
 
 logger = get_logger(__name__)
@@ -11,7 +14,8 @@ logger = get_logger(__name__)
 class Pipeline:
     """Class that represents the ETL pipeline."""
     
-    def __init__(self, 
+    def __init__(
+        self, 
         source: BaseSource,
         transformer: BaseTransformer,
         loader: BaseLoader
@@ -41,8 +45,8 @@ class Pipeline:
         logger.info("Data transformed")
         
         self.loader.save_data(transformed_data)
-        logger.info("Data saved")
         
+        logger.info("Data saved")
         logger.info("Pipeline process completed")
         
         return transformed_data

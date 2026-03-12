@@ -2,7 +2,7 @@ import logging
 import os
 
 
-def get_logger(name) -> logging.Logger:
+def get_logger(name: str) -> logging.Logger:
     """
     Create and configure a logger.
 
@@ -14,7 +14,7 @@ def get_logger(name) -> logging.Logger:
     """
 
     if not os.path.exists("logs"):
-        os.makedirs("logs")
+        os.makedirs("logs", exist_ok=True)
 
     logger = logging.getLogger(name)
     logger.setLevel(logging.DEBUG)
@@ -25,7 +25,7 @@ def get_logger(name) -> logging.Logger:
         "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
     )
 
-    file_handler = logging.FileHandler("logs/app.log")
+    file_handler = logging.FileHandler("logs/app.log", encoding="utf-8")
     file_handler.setFormatter(formatter)
 
     console_handler = logging.StreamHandler()

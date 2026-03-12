@@ -1,48 +1,40 @@
-2026-03-10 16:28:04,354 | INFO | __main__ | Program started
-2026-03-10 16:28:04,354 | DEBUG | __main__ | Debug message
-2026-03-10 16:28:04,354 | INFO | __main__ | Application started
-2026-03-10 16:31:26,678 | INFO | __main__ | Program started
-2026-03-10 16:31:26,678 | DEBUG | __main__ | Debug message
-2026-03-10 16:31:26,678 | INFO | __main__ | Application started
-2026-03-10 16:32:44,805 | INFO | __main__ | Program started
-2026-03-10 16:32:44,806 | DEBUG | __main__ | Debug message
-2026-03-10 16:32:44,806 | INFO | __main__ | Application started
-2026-03-10 17:07:49,887 | INFO | __main__ | Application started
-2026-03-10 17:07:53,036 | INFO | transform.transformers | Data transformed successfully
-2026-03-10 17:10:36,134 | INFO | __main__ | Application started
-2026-03-10 17:10:37,933 | INFO | transform.transformers | Data transformed successfully
-2026-03-10 17:10:40,332 | INFO | __main__ | Application finished
-2026-03-11 14:38:10,667 | INFO | __main__ | Application started
-2026-03-11 14:38:15,930 | INFO | transform.transformers | Data transformed successfully
-2026-03-11 17:08:53,200 | INFO | __main__ | Application started
-2026-03-11 17:08:55,341 | INFO | transform.transformers | Data transformed successfully
-2026-03-11 17:09:53,644 | INFO | transform.transformers | Data transformed successfully
-2026-03-11 17:11:03,243 | INFO | __main__ | Application started
-2026-03-11 17:11:03,911 | INFO | transform.transformers | Data transformed successfully
-2026-03-11 17:11:03,924 | INFO | loaders.csv_loader | Data saved to /media/alexander/Dane2/2_Coding/2_python_coding/001_etl_project_OOP/saved_data/output.csv
-2026-03-11 17:15:55,561 | INFO | transform.transformers | Data transformed successfully
-2026-03-11 17:15:55,574 | INFO | loaders.csv_loader | Data saved to /media/alexander/Dane2/2_Coding/2_python_coding/001_etl_project_OOP/saved_data/output.csv
-2026-03-12 12:44:02,787 | INFO | __main__ | Application started
-2026-03-12 12:44:05,501 | INFO | transform.transformers | Data transformed successfully
-2026-03-12 12:44:05,524 | INFO | loaders.csv_loader | Data saved to /media/alexander/Dane2/2_Coding/2_python_coding/001_etl_project_OOP/saved_data/output.csv
-2026-03-12 12:44:14,071 | INFO | __main__ | Application finished
-2026-03-12 13:06:13,048 | INFO | __main__ | Application started
-2026-03-12 13:06:15,579 | INFO | transform.transformers | Data transformed successfully
-2026-03-12 13:06:15,594 | INFO | loaders.csv_loader | Data saved to /media/alexander/Dane2/2_Coding/2_python_coding/001_etl_project_OOP/saved_data/output.csv
-2026-03-12 13:06:17,354 | INFO | __main__ | Application finished
-2026-03-12 13:15:42,334 | INFO | __main__ | Application started
-2026-03-12 13:15:44,186 | INFO | etl.pipeline | Pipeline started
-2026-03-12 13:15:44,191 | INFO | etl.pipeline | Data loaded
-2026-03-12 13:15:44,195 | INFO | transform.transformers | Data transformed successfully
-2026-03-12 13:15:44,195 | INFO | etl.pipeline | Data transformed
-2026-03-12 13:15:44,202 | INFO | loaders.csv_loader | Data saved to /media/alexander/Dane2/2_Coding/2_python_coding/001_etl_project_OOP/saved_data/output.csv
-2026-03-12 13:15:44,202 | INFO | etl.pipeline | Data saved
-2026-03-12 13:15:44,202 | INFO | etl.pipeline | Pipeline process completed
-2026-03-12 13:18:11,445 | INFO | __main__ | Application started
-2026-03-12 13:18:14,660 | INFO | etl.pipeline | Pipeline started
-2026-03-12 13:18:14,672 | INFO | etl.pipeline | Data loaded
-2026-03-12 13:18:14,676 | INFO | transform.transformers | Data transformed successfully
-2026-03-12 13:18:14,682 | INFO | etl.pipeline | Data transformed
-2026-03-12 13:18:14,689 | INFO | loaders.csv_loader | Data saved to /media/alexander/Dane2/2_Coding/2_python_coding/001_etl_project_OOP/saved_data/output.csv
-2026-03-12 13:18:14,689 | INFO | etl.pipeline | Data saved
-2026-03-12 13:18:14,689 | INFO | etl.pipeline | Pipeline process completed
+2026-03-12 14:01:51,141 | INFO | __main__ | Application started
+2026-03-12 14:01:52,544 | INFO | etl.pipeline | Pipeline started
+2026-03-12 14:01:52,544 | INFO | sources.csv_source | Loading CSV file: /media/alexander/Dane2/2_Python_Data/998_Databases/2_db_cars_csv/USA_cars_datasets.csv
+2026-03-12 14:01:52,549 | INFO | sources.csv_source | Loaded 2499 rows from /media/alexander/Dane2/2_Python_Data/998_Databases/2_db_cars_csv/USA_cars_datasets.csv
+2026-03-12 14:01:52,556 | INFO | etl.pipeline | Data loaded
+2026-03-12 14:01:52,561 | INFO | transform.transformers | Rows before: 2499, rows after: 2499
+2026-03-12 14:01:52,561 | INFO | transform.transformers | Data transformed successfully
+2026-03-12 14:01:52,567 | INFO | etl.pipeline | Data transformed
+2026-03-12 14:01:52,574 | INFO | loaders.csv_loader | Data saved to /media/alexander/Dane2/2_Coding/2_python_coding/001_etl_project_OOP/saved_data/output.csv
+2026-03-12 14:01:52,574 | INFO | etl.pipeline | Data saved
+2026-03-12 14:01:52,574 | INFO | etl.pipeline | Pipeline process completed
+2026-03-12 14:01:54,584 | INFO | __main__ | Application finished
+2026-03-12 14:03:37,869 | INFO | __main__ | Application started
+2026-03-12 14:03:38,618 | INFO | etl.pipeline | Pipeline started
+2026-03-12 14:03:38,618 | INFO | sources.csv_source | Loading CSV file: /media/alexander/Dane2/2_Python_Data/998_Databases/2_db_cars_csv/USA_cars_datasets.csv
+2026-03-12 14:03:38,622 | INFO | sources.csv_source | Loaded 2499 rows from /media/alexander/Dane2/2_Python_Data/998_Databases/2_db_cars_csv/USA_cars_datasets.csv
+2026-03-12 14:03:38,630 | INFO | etl.pipeline | Data loaded
+2026-03-12 14:03:38,634 | INFO | transform.transformers | Rows before: 2499, rows after: 2499
+2026-03-12 14:03:38,634 | INFO | transform.transformers | Data transformed successfully
+2026-03-12 14:03:38,640 | INFO | etl.pipeline | Data transformed
+2026-03-12 14:03:38,647 | INFO | loaders.csv_loader | Data saved to /media/alexander/Dane2/2_Coding/2_python_coding/001_etl_project_OOP/saved_data/output.csv
+2026-03-12 14:03:38,647 | INFO | etl.pipeline | Data saved
+2026-03-12 14:03:38,647 | INFO | etl.pipeline | Pipeline process completed
+2026-03-12 14:03:39,937 | INFO | __main__ | Application finished
+2026-03-12 14:04:52,369 | INFO | __main__ | Application started
+2026-03-12 14:04:53,530 | INFO | etl.pipeline | Pipeline started
+2026-03-12 14:04:53,531 | INFO | sources.csv_source | Loading CSV file: /media/alexander/Dane2/2_Python_Data/998_Databases/2_db_cars_csv/USA_cars_datasets.csv
+2026-03-12 14:04:53,535 | INFO | sources.csv_source | Loaded 2499 rows from /media/alexander/Dane2/2_Python_Data/998_Databases/2_db_cars_csv/USA_cars_datasets.csv
+2026-03-12 14:04:53,544 | INFO | etl.pipeline | Data loaded
+2026-03-12 14:04:53,548 | INFO | transform.transformers | Rows before: 2499, rows after: 2499
+2026-03-12 14:04:53,548 | INFO | transform.transformers | Data transformed successfully
+2026-03-12 14:04:53,554 | INFO | etl.pipeline | Data transformed
+2026-03-12 14:04:53,561 | INFO | loaders.csv_loader | Data saved to /media/alexander/Dane2/2_Coding/2_python_coding/001_etl_project_OOP/saved_data/output.csv
+2026-03-12 14:04:53,561 | INFO | etl.pipeline | Data saved
+2026-03-12 14:04:53,561 | INFO | etl.pipeline | Pipeline process completed
+2026-03-12 14:04:55,122 | INFO | __main__ | Application finished
+2026-03-12 14:22:52,137 | INFO | transform.transformers | Rows before: 3, rows after: 1
+2026-03-12 14:22:52,137 | INFO | transform.transformers | Data transformed successfully
+2026-03-12 14:24:33,684 | INFO | transform.transformers | Rows before: 3, rows after: 1
+2026-03-12 14:24:33,684 | INFO | transform.transformers | Data transformed successfully

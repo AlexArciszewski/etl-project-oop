@@ -1,5 +1,6 @@
 from .base_loader import BaseLoader 
 from etl.logger import get_logger
+
 import pandas as pd
 
 
@@ -8,11 +9,11 @@ logger = get_logger(__name__)
 
 class CsvLoader(BaseLoader):
     
-    def __init__(self, path: str):
+    def __init__(self, path: str) -> None:
         self.path = path
     
-    def save_data(self, data:pd.DataFrame) -> None:
-        """Saving transformed data into  csv file"""
+    def save_data(self, data: pd.DataFrame) -> None:
+        """Save transformed data into CSV file."""
         
         data.to_csv(self.path, index=False)
         

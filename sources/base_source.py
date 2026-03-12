@@ -9,6 +9,7 @@ class BaseSource(ABC):
     
     @abstractmethod
     def get_data(self) -> pd.DataFrame:
-        """Gets data and return it as a DataFrame"""
-        pass
+        """Gets data and returns it as a DataFrame"""
+        
+        raise NotImplementedError
     

@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+
 import pandas as pd
 
 
@@ -16,5 +17,5 @@ class BaseTransformer(ABC):
         Returns:
             pd.DataFrame: Transformed data 
         """
-        pass
+        raise NotImplementedError
     
